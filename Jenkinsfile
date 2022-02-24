@@ -4,13 +4,13 @@ pipeline {
         stage('Build') { 
             steps {
            echo "Hello world"     
-                sh "hello.py"
+                sh "javac Hello.java"
             }
         }
         stage('execute') { 
             steps {
                echo "test"
-                sh "python Hello"
+                sh "java Hello"
             }
         }
         stage('Deploy') { 
