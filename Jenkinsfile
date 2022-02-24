@@ -10,7 +10,7 @@ pipeline {
         stage('execute') { 
             steps {
                echo "test"
-                sh Hello.java
+                sh java Hello
             }
         }
         stage('Deploy') { 
